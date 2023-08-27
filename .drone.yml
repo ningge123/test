@@ -1,0 +1,16 @@
+---
+kind: pipeline
+type: docker
+name: drone-staging-production
+steps:
+  - name: build-production-image
+    image: hub.azoyagroup.com/drone-plugins/drone-docker
+    settings:
+      tags: v2.0.2
+      repo: hub.azoyagroup.com/azoya/promotion_calculate_service
+trigger:
+  branch:
+    - master
+  event:
+    - push
+    - pull_request
