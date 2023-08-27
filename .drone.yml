@@ -4,7 +4,7 @@ type: docker
 name: drone-staging-production
 steps:
   - name: build
-    image: golang
+    image: golang:1.17.13-alpine
 trigger:
   branch:
     - master

@@ -1,4 +1,4 @@
-FROM golang:1.17.2-alpine AS build
+FROM golang:1.17.13-alpine AS build
 
 # 增加国内镜像源
 ENV GOPROXY=https://goproxy.io,https://mirrors.aliyun.com/goproxy/,direct
