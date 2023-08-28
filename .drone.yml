@@ -5,6 +5,9 @@ name: drone-staging-production
 steps:
   - name: build
     image: www.cocoyo.xin/drone-plugins/plugins/docker
+    pull: always
+    settings:
+      tags: latest
 trigger:
   branch:
     - master
