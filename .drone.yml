@@ -8,6 +8,9 @@ steps:
     pull: always
     settings:
       tags: latest
+      repo: www.cocoyo.xin/cc/test
+      username: admin
+      password: Harbor12345
 trigger:
   branch:
     - master
