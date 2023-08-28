@@ -7,10 +7,13 @@ steps:
     image: www.cocoyo.xin/drone-plugins/plugins/docker
     pull: always
     settings:
+      dockerfile: Dockerfile
+      registry: www.cocoyo.xin
       tags: latest
       repo: www.cocoyo.xin/cc/test
       username: admin
       password: Harbor12345
+      insecure: true
 trigger:
   branch:
     - master
