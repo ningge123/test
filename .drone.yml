@@ -8,7 +8,7 @@ steps:
     privileged: true
     pull: always
     settings:
-      tags: latest
+      tags: v1
     volumes:
         - name: temp
           path: /tmp
