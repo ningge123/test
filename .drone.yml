@@ -9,6 +9,8 @@ steps:
     settings:
       tags: latest
       repo: www.cocoyo.xin/cc/test
+image_pull_secrets:
+  - dockerconfig
 trigger:
   branch:
     - master
