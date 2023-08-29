@@ -9,7 +9,7 @@ steps:
     pull: always
     settings:
       tags: latest
-      repo: www.cocoyo.xin/drone-plugins/cc/test
+      repo: www.cocoyo.xin/cc/test
       username: jnp
       password: Harbor123456
     volumes:
