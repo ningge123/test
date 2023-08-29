@@ -9,7 +9,7 @@ steps:
     pull: always
     settings:
       tags: latest
-      repo: www.cocoyo.xin/cc/test
+      repo: www.cocoyo.xin/drone-plugins/test
     volumes:
         - name: temp
           path: /tmp
