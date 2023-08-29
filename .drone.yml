@@ -5,9 +5,13 @@ name: drone-staging-production
 steps:
   - name: build
     image: www.cocoyo.xin/drone-plugins/plugins/docker
+    privileged: true
     pull: always
     settings:
       tags: latest
+    volumes:
+        - name: temp
+          path: /tmp
 trigger:
   branch:
     - master
