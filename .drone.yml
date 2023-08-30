@@ -9,6 +9,7 @@ steps:
     pull: always
     settings:
       tag: latest
+      repo: www.cocoyo.xin/cc/test
     volumes:
         - name: temp
           path: /tmp
