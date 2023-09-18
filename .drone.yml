@@ -4,7 +4,7 @@ type: docker
 name: drone-staging-production
 steps:
   - name: build
-    image: www.cocoyo.xin/drone-plugins/plugins/docker
+    image: hub.cocoyo.xin/drone-plugins/plugins/docker
     privileged: true
     pull: always
     settings:
